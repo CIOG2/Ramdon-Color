@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramdom Color</title>
-    <link rel="stylesheet" href="src/CSS/style.css">
-    <link rel="stylesheet" href="src/CSS/header.css">
     <link rel="stylesheet" href="src/CSS/main.css">
+    <link rel="stylesheet" href="src/CSS/RamdomColor/header.css">
+    <link rel="stylesheet" href="src/CSS/RamdomColor/style.css">
 </head>
 <body id="areaChangeColor">
     <header class="header">
@@ -16,7 +16,7 @@
     <main class="main">
         <section class="main__section flex1">
             <div class="main__section--button flex1">
-                <button onclick="changeColor()" type="button">
+                <button id="button-Change-Color" type="button">
                     Change Color
                 </button>
             </div>  
@@ -24,12 +24,12 @@
                 <div class="text-container flex2">
                     <p id="color"></p>
                 </div>
-                <button id="copy-container" onclick="copyToClipBoard()" type="button" class="copy-container flex1">
+                <button id="copy-container" type="button" class="copy-container flex1">
                     <img src="https://i.ibb.co/k3KMrhc/copy.png" alt="copy">
                     <span>copy</span>
                 </button>
             </div>
         </section>
     </main>
-     <script src="src/JS/index.js"></script>
+     <script src="src/JS/ramdomColor.js" type="module"></script>
 </body>
