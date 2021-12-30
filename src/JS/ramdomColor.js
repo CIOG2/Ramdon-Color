@@ -1,5 +1,5 @@
 import {ramdomColor} from './components/ColorRamdom.js';
-import { copyToClipBoard } from './components/copyToClipBoard.js';
+import { copyToClipBoard } from './components/CopyToClipBoard.js';
 
 let areaChangeColor = document.getElementById("areaChangeColor");
 let tagColor = document.getElementById("color");
