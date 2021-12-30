@@ -31,7 +31,15 @@
     padding: 0px 20px;
 }
 .main__section--copy .text-container{
-    display: none;
+    width: auto;
+    height: 55%;
+    max-height: 75px;
+    max-width: 600px;
+    margin-right: 10px;
+    padding: 0 10px;
+    background-color: black;
+    border-radius: 5px;
+    border : 2px solid white;
 }
 .main__section--copy .text-container p{
     font-size: 1.7rem;
@@ -112,17 +120,4 @@
         height: 55%;
         max-height: 75px;
     }
-    
-    .main__section--copy .text-container{
-        display: flex;
-        width: auto;
-        height: 55%;
-        max-height: 75px;
-        max-width: 600px;
-        margin-right: 10px;
-        padding: 0 10px;
-        background-color: black;
-        border-radius: 5px;
-        border : 2px solid white;
-    }    
 }
