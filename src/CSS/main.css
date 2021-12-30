@@ -58,6 +58,24 @@
 }
 
 
+.copy-animation{
+    animation: animation-copy 1s;
+}
+@keyframes animation-copy{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: greenyellow;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+
+
+
 @media screen and (min-width: 360px){   
     .main__section--button button{
         width: 130px;

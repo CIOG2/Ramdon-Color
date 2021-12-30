@@ -9,13 +9,25 @@ function changeColor() {
     tagColor.value = color;
 }
 
+
 function ramdomColor() {
     let color = Math.floor(Math.random() * 16777215).toString(16);
     return "#" + ("000000" + color).slice(-6);  
 }
 
 
+function copyAnimation() {
+    let copyAnimation = document.getElementById("copy-container");
+    copyAnimation.classList.add("copy-animation");
+    setTimeout(() => {
+        copyAnimation.classList.remove("copy-animation");
+    } , 1000);
+}
+
+
 function copyToClipBoard() {
+    copyAnimation();
+
     let inputFalso = document.createElement("input");
     inputFalso.setAttribute("value", tagColor.innerHTML);
    
@@ -25,7 +37,8 @@ function copyToClipBoard() {
     document.execCommand("copy");
    
     document.body.removeChild(inputFalso);  
-  }
+}
+
 
 window.onload = () => {
     changeColor();
